@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!--Esto es un encabezado por defecto solo escribiendo ! -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+</head>
+<body>
+    <!--Ejemplos de etiquetas H   (h1 solo se utilza una vez en cada pagina) (Desde h1 hasta h6)-->
+    <h1>Ejemplo de H</h1>
+    <!--Etiquetas de texto-->
+    <p>Esto es un párrafo.</p><!--Escribiendo el nombre de la etiqueta y darle tabular-->
+        <!--Estilos para el texto en HTML-->
+        <b>b Negrita</b><br>
+        <strong>strong es gual de la etiqueta b</strong><br><!--El navegador le dará mas importancia-->
+        <i>i es Cursiva</i><br>
+        <em>em es lo mismo que i</em><br><!--El navegador le dará mas importancia-->
+        <s>s es tachar</s><br>
+        <small>small es para texto pequeño</small><br><br>
+     <!--Etiquetas de estilo dentro de etiquetas de texto-->   
+        <p><span style="color: blue;">spam añade atributos de estilo dentro de etiquetas de texto</span></p><br>
+        <p  class="Miprimeraclass">Ejemplo de texto utilizando id ("#") y class (".") en la etiqueta style</p><br>
+        <!--La diferencia entre una ID y una clase es que una ID se puede usar para identificar un solo elemento
+            , mientras que una clase se puede usar para agrupar más de uno.-->
+        <style>
+            <!--  -->
+            #MiprimerID{
+                background: chartreuse;
+            }
+            .Miprimeraclass{
+                background: chocolate;
+            }        
+        </style>
+        <br>
+    <!--Etiquetas de enlaces-->
+        <!-- Target en _blank es para abrir la ref en una pestaña nueva. 
+            _self es para pasar a la referencia utilizando la misma pestaña-->
+        <a href="https://www.google.com.co/" target="_blank">Ir a</a> <br><br>
+
+    <!--Etiqueta de imagen-->
+        <img src="img/chaplin.png" alt="cine clasico" title="Chaplin"><br><br>
+    <!--Listas: ol es para enumerar o lista ordenada. ul es para crear listas desordenadas-->
+    <ol>
+        <li>Elemento1:
+            <ul>
+                <li>Subelemento</li>
+            </ul>
+        </li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+    </ol><br><br>
+    <!--Formularios, input, label. Agrupar con fieldset y legend-->
+        <form>
+            <fieldset>
+                <legend>Agrupación de form</legend>
+                <label>Nombre: </label>
+                <input type="text" placeholder="Escribe algo" required> 
+                <input type="date">
+                <input type="file"><br><br>
+                <!--seleccion por radio-->
+                <p style="font-size: large ; font-style: inherit;">Cómo nos has conocido</p>
+                <input type="radio" id="email1" name="contact">
+                <label for="email1">Email</label>
+                <input type="radio" id="tel1" name="contact">
+                <label for="tel1">Telefono</label><br><br>
+                <!--seleccion por select y option-->
+                <p style="font-size: large ; font-style: inherit;">Cómo nos has conocido</p>
+                <select>
+                    <option value="Email">Email</option>
+                    <option value="Telefono">Telefono</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </fieldset>
+            
+        </form><br><br>
+    <!--Etiqueta iframe para incrustar paginas o videos-->      
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/Xfl9gjgWJH4?list=PLMu9C465dSKCJqUBUbqpNfbveq-nATRtZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Etiqueta dv para agrupar-->  
+        <div></div>
+    <!--Etiquetas para tener ordenada la pagina-->     
+        <header></header>   <!--Etiqueta para poner el logotipo e info importante de la parte superior--> 
+        <nav></nav>         <!--Etiqueta para poner el menu--> 
+        <main>              <!--Etiqueta para el contenido principal de la web--> 
+            <section>       <!--Etiqueta para crear secciones de la web-->
+                <article>   <!--Etiqueta para poner otra info, como bloques de articulos relacionados o comentarios--> 
+                </article>
+                <aside>     <!--Etiqueta para poner bloques al lado del contenido--> 
+                </aside>
+            </section>  
+        </main> 
+        <footer></footer>   <!--Etiqueta para poner la info de abajo de la pagina--> 
+        
+        
+        
+        
+        
+</body>
+</html>
